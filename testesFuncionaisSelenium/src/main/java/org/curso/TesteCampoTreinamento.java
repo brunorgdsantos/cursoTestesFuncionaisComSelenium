@@ -10,17 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.Collections;
 import java.util.List;
 
-public class TesteCampoTreinamento extends Acesso{
+public class TesteCampoTreinamento {
 
-    @Test
-    public void testTextField() {
-        WebElement campoNome = acesso().findElement(By.id("elementosForm:nome"));
-        campoNome.sendKeys("Bruno");
-        Assertions.assertEquals("Bruno", campoNome.getAttribute("value"));
-        acesso().quit();
-    }
-
-    @Test
+        @Test
     public void deveInteragirComTextArea(){
         WebDriver driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1200, 765));
